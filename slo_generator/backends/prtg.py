@@ -79,7 +79,7 @@ class PrtgBackend:
         Returns:
             tuple: Good event count, Bad event count.
         """
-        conf = slo_config['backend']
+        conf = slo_config['spec']
         measurement = conf['measurement']
         timestamp = time.time()
         start = (timestamp - window)
